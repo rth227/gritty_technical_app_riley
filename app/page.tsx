@@ -11,6 +11,7 @@ type Message = {
   timestamp: Date;
 };
 
+// chat page 
 export default function ChatPage() {
   // storing messages 
   const [messages, setMessages] = useState<Message[]>([]);
@@ -103,7 +104,7 @@ export default function ChatPage() {
         <div className="flex-1 overflow-y-auto p-4 space-y-4">
           {messages.length === 0 ? (
             <div className="text-center text-gray-500 mt-8">
-              <p>No messages yet... Say hi!</p>
+              <p>Say hi!</p>
             </div>
           ) : (
             messages.map((message, index) => (
@@ -163,7 +164,7 @@ export default function ChatPage() {
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Enter a message ..."
+                placeholder="Type something ... "
                 disabled={isLoading}
                 className="w-full px-4 py-2 border-2 rounded-lg focus:outline-none focus:ring-2 disabled:bg-gray-100"
                 style={{ borderColor: '#9fabb3', outlineColor: '#9fabb3' }}
@@ -172,7 +173,7 @@ export default function ChatPage() {
               
               {/* message */}
               <p className="text-xs text-gray-400 text-center mt-1">
-                Send a message to Claude AI !!!!!
+                Type a message ...
               </p>
             </div>
             
@@ -184,11 +185,11 @@ export default function ChatPage() {
                 className="px-6 py-2 text-white rounded-lg hover:opacity-80 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors border-2 whitespace-nowrap"
                 style={{ backgroundColor: '#9fabb3', borderColor: '#9fabb3' }}
               >
-                Send !!!
+                Send
               </button>
               
               <p className="text-xs text-gray-400 text-center mt-1">
-                {input.length}/1000
+                {input.length}/1000 chars
               </p>
             </div>
           </div>
