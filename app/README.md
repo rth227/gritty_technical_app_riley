@@ -21,6 +21,7 @@
 
 - One limitation on the user side is that I capped the messages to 1000 characters. 
 - There is no authentication process currently, so anyone could access this with an API key. 
+- Chatbot only accepts text as of right now, no images or documents. 
 - Error messages are not super descriptive, which could be fixed for more specific errors as the platform gets more complicated. 
 - I tested a good number of prompts using the AI, but obviously was not able to test everything. 
 
