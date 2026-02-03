@@ -1,5 +1,5 @@
 ## 1. Loom demo link
-(link will go here)
+https://www.loom.com/share/cdad189916944a78b09da977d096ff96
 
 ## 2. Setup instructions:
 
